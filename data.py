@@ -1,8 +1,8 @@
-import panda as pd
+import pandas as pd
 
 
 class Data:
-    
+
     instanceDataFrame = None
 
     def __init__(self):
