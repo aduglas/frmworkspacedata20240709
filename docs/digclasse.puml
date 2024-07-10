@@ -6,19 +6,19 @@ abstract class AbsSort
 abstract class AbsRender
 abstract class AbsDeployer
 
-CvsCollector <|-- AbsCollector
-CurlCollector <|-- AbsCollector
-JsonCollector <|-- AbsCollector
+AbsCollector <|-- CvsCollector 
+AbsCollector <|-- CurlCollector 
+AbsCollector <|-- JsonCollector 
 
-NoneFusion <|-- AbsFusion
-UnFusioner <|-- AbsFusion
+AbsFusion <|-- NoneFusion 
+AbsFusion <|-- UnFusioner 
 
-NoneSort <|-- AbsSort
-UnSorter <|-- AbsSort
+AbsSort <|-- NoneSort 
+AbsSort <|-- UnSorter 
 
-DefaultRender <|-- AbsRender
-Unrender <|-- AbsRender
+AbsRender <|-- DefaultRender 
+AbsRender <|-- Unrender 
 
-DefaultDeployer <|-- AbsDeployer
+AbsDeployer <|-- DefaultDeployer  
 
 @enduml
