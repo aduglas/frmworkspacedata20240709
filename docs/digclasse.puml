@@ -1,0 +1,24 @@
+@startuml
+
+abstract class AbsCollector
+abstract class AbsFusion
+abstract class AbsSort
+abstract class AbsRender
+abstract class AbsDeployer
+
+CvsCollector <|-- AbsCollector
+CurlCollector <|-- AbsCollector
+JsonCollector <|-- AbsCollector
+
+NoneFusion <|-- AbsFusion
+UnFusioner <|-- AbsFusion
+
+NoneSort <|-- AbsSort
+UnSorter <|-- AbsSort
+
+DefaultRender <|-- AbsRender
+Unrender <|-- AbsRender
+
+DefaultDeployer <|-- AbsDeployer
+
+@enduml

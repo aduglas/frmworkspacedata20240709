@@ -1,0 +1,13 @@
+@startuml
+
+[*] --> Collecteur
+
+Collecteur -> Fusion
+
+Fusion --> Sort
+Sort --> Render
+Render --> Deployeur
+
+Deployeur--> [*]
+
+@enduml
